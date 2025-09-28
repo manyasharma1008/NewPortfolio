@@ -29,10 +29,10 @@ function App() {
               </h1>
               <p className="text-xl mb-8 text-primary-100">BTech CSE AIML | Web Developer | AI Enthusiast</p>
               <div className="flex justify-center md:justify-start space-x-6">
-                <a href="https://github.com" className="transform hover:scale-110 transition-transform duration-200">
+                <a href="https://github.com/manyasharma1008" className="transform hover:scale-110 transition-transform duration-200">
                   <Github size={28} className="hover:text-primary-300" />
                 </a>
-                <a href="https://linkedin.com" className="transform hover:scale-110 transition-transform duration-200">
+                <a href="https://www.linkedin.com/in/manya-sharma-5a867a324/" className="transform hover:scale-110 transition-transform duration-200">
                   <Linkedin size={28} className="hover:text-primary-300" />
                 </a>
                 <a href="mailto:manya.s1008@gmail.com" className="transform hover:scale-110 transition-transform duration-200">
@@ -73,13 +73,13 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 transform hover:-translate-y-1 transition-transform duration-300 dark:bg-secondary-800">
               <p className="text-gray-700 leading-relaxed text-lg dark:text-gray-300">
-                I'm an 18-year-old BTech CSE AIML student at SRM University Kattankulathur, passionate about web development and AI. 
+                I'm an 19-year-old BTech CSE AIML student at SRM University Kattankulathur, passionate about web development and AI/ML. 
                 I specialize in frontend development but am open to exploring full-stack technologies.
               </p>
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <Stat number="1+" text="Years Coding" />
-                <Stat number="5+" text="Projects" />
-                <Stat number="3+" text="Hackathons" />
+                <Stat number="10+" text="Projects" />
+                <Stat number="7+" text="Hackathons" />
                 <Stat number="3+" text="Awards" />
               </div>
             </div>
@@ -117,12 +117,12 @@ function App() {
             />
             <SkillCard 
               title="AI & Machine Learning" 
-              items={["TensorFlow", "OpenCV (Basic)", "Scikit-learn (Basic)"]}
+              items={["TensorFlow", "OpenCV", "Scikit-learn","Pandas","NumPy","Matplotlib","Seaborn","Librosa"]}
               icon={<Award className="w-8 h-8" />}
             />
             <SkillCard 
               title="DevOps & Deployment" 
-              items={["Netlify", "Git/GitHub", "Docker (basic)"]}
+              items={["Netlify", "Git/GitHub", "Docker","Vercel"]}
               icon={<Github className="w-8 h-8" />}
             />
           </div>
@@ -151,6 +151,50 @@ function App() {
               image="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80"
               link="https://consultunivoice.netlify.app"
             />
+            <ProjectCard
+              title="Parkinson's Detection by Voice"
+              description="Machine learning-based project that detects Parkinson's disease from voice features and spectrograms. Implements feature extraction (MFCC, jitter, shimmer, etc.) and deep learning models like CNN and LSTM."
+              tech={["Python", "TensorFlow", "Scikit-learn", "Librosa"]}
+              image="https://plus.unsplash.com/premium_photo-1661422287701-db8bc59f9d46?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="https://github.com/manyasharma1008/Parkinsons-Detection_ByVOICE"
+            />
+          </div>
+        </div>
+      </section>
+
+            {/* Experience Section */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-secondary-800 dark:to-secondary-900">
+        <div className="container mx-auto px-6">
+          <h2 className="text-4xl font-bold text-center mb-16 relative">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-500 dark:from-primary-400 dark:to-primary-300">
+              Experience
+            </span>
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary-600 to-primary-500 dark:from-primary-400 dark:to-primary-300"></div>
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* AWS AI/ML Virtual Internship */}
+            <div className="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-1 transition-all duration-300 dark:bg-secondary-800">
+              <h3 className="text-2xl font-semibold mb-3 dark:text-white">AWS AI/ML Virtual Internship</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                Gained hands-on experience with cloud-based AI and ML solutions, including model training, deployment, 
+                and integration with AWS services.
+              </p>
+              <span className="inline-block bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">
+                2024
+              </span>
+            </div>
+
+            {/* BIT-SIPAR 2025 Research Internship */}
+            <div className="bg-white rounded-xl p-6 shadow-lg transform hover:-translate-y-1 transition-all duration-300 dark:bg-secondary-800">
+              <h3 className="text-2xl font-semibold mb-3 dark:text-white">BIT-SIPAR 2025 Research Internship</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                Done Research internship under Dr. Sitanshu Sekhar Sahu focused on how we can detect diseases by extracting the features of voice using ML and DL.
+              </p>
+              <span className="inline-block bg-primary-100 text-primary-600 dark:bg-primary-900/50 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">
+                2025
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -190,24 +234,14 @@ function App() {
               icon={<Award />}
             />
             <Achievement 
-              title="Mentorship Platform Development"
-              description="Built Univoice, a full-stack application enabling seamless mentor-student communication"
-              icon={<Rocket />}
-            />
-            <Achievement 
-              title="Zonal-Level Badminton Achievement"
-              description="Competed at the zonal level, demonstrating leadership and discipline"
-              icon={<Award />}
-            />
-            <Achievement 
-              title="Stanford ML Course"
-              description="Expanding expertise in AI and machine learning through advanced coursework (Autumn 2018)"
-              icon={<GraduationCap />}
-            />
-            <Achievement 
               title="Full-Stack Development"
               description="Proficient in building and deploying applications, ensuring seamless user experience"
               icon={<Code />}
+            />
+            <Achievement
+              title="Internship & Academic Excellence"
+              description="Secured two internships in the first year itself (AWS AI/ML Virtual Internship & BIT-SIPAR 2025 Research Internship) and maintained a 9.93 CGPA."
+              icon={<Award />}
             />
           </div>
         </div>
@@ -240,12 +274,12 @@ function App() {
                 <SocialLink 
                   icon={<Github />} 
                   text="GitHub" 
-                  link="https://github.com"
+                  link="https://github.com/manyasharma1008"
                 />
                 <SocialLink 
                   icon={<Linkedin />} 
                   text="LinkedIn" 
-                  link="https://linkedin.com"
+                  link="https://www.linkedin.com/in/manya-sharma-5a867a324/"
                 />
               </div>
             </div>
